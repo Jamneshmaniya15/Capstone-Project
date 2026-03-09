@@ -18,7 +18,7 @@ public class TestClass extends BaseTest {
         return new Object[][] {
             { "Boston",   "London"  },
             { "Paris",    "Dublin"  },
-            { "Portland", "Boston"  }
+            { "Portland", "New York"  }
         };
     }
 	
