@@ -13,7 +13,7 @@ import java.time.Duration;
 public class HomePage {
 
     WebDriver driver;
-    WebDriverWait wait;  // ✅ ADD THIS
+    WebDriverWait wait;  
 
     @FindBy(name = "fromPort")
     WebElement fromCity;
@@ -26,12 +26,12 @@ public class HomePage {
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // ✅ ADD THIS
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
         PageFactory.initElements(driver, this);
     }
 
     public void selectCity(String from, String to) {
-        // ✅ FIX: Wait for dropdowns to be visible before selecting
+        
         wait.until(ExpectedConditions.visibilityOf(fromCity));
         wait.until(ExpectedConditions.visibilityOf(toCity));
 

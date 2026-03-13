@@ -27,8 +27,8 @@ public class TestClass extends BaseTest {
     	
     	ExtentReportManager.createTest("Book Flight");
 
-        HomePage home         = new HomePage(driver);
-        BookingPage booking   = new BookingPage(driver);
+        HomePage home = new HomePage(driver);
+        BookingPage booking = new BookingPage(driver);
         PurchasePage purchase = new PurchasePage(driver);
         ConfirmationPage confirm = new ConfirmationPage(driver);
 
